@@ -1,0 +1,137 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600&display=swap');
+
+
+/* reset default style */
+*::before, *::after {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: hsl(225, 100%, 94%);
+  --blue: hsl(245, 75%, 52%);
+  --pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+img {
+  width: 100%;
+  display: inline-block;
+  
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+  border: none;
+
+  border-radius: 8px;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 600;
+}
+
+.card {
+  max-width: 375px;
+  margin: 0 auto;
+
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.card__body {
+  padding: 14px;
+  margin: 0 10px;
+}
+
+.card__body--title, .card__body--description {
+  text-align: center;
+}
+
+.card__body--title {
+  color: var(--dark-blue);
+}
+
+.card__body--description {
+  font-size: 16px;
+  color: var(--dark-blue);
+
+  line-height: 1.5;
+}
+
+.plan {
+  background-color: var(--pale-blue);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 4px;
+
+  border-radius: 8px;
+}
+
+.plan__desc {
+  margin-left: 20px;
+  line-height: 0.5;
+  padding: 10px;
+}
+
+.plan__price {
+  color: var(--desaturated-blue);
+}
+
+.plan__charges {
+  font-weight: 600;
+}
+
+.desc__title {
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+.plan__detail {
+  display: flex;
+  align-items: center;
+}
+
+.plan__detail img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.btn-process, .btn-cancel {
+  display: block;
+  width: 100%;
+}
+
+.btn-process {
+  margin-top: 20px;
+  background-color: hsl(245, 75%, 52%);
+  padding: 10px;
+  color: white;
+}
+
+.btn-cancel {
+  background-color: hsl(225, 100%, 94%);
+  margin-top: 10px;
+  padding: 10px;
+  color: var(--dark-blue);
+}
